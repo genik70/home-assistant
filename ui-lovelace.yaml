@@ -1,0 +1,32 @@
+title: Our Home
+# Include external resources here
+resources:
+  - url: /local/lovelace-fullykiosk.js
+    type: js
+  - url: /local/kiosk-config.js
+    type: js
+  - url: /customcards/github/custom-cards/tracker-card.js?track=true
+    type: module
+  - url: /customcards/github/thomasloven/card-tools.js?track=true
+    type: js  
+  - url: /customcards/github/maykar/compact-custom-header.js?track=true
+    type: module
+  - url: /customcards/github/thomasloven/layout-card.js?track=true
+    type: js  
+  - url: /local/floorplan/floorplan.js?v=1.0.0
+    type: js
+  - url: 'https://fonts.googleapis.com/css?family=Quicksand:300,400'
+    type: css
+  - url: /community_plugin/compact-custom-header/compact-custom-header.js
+    type: module
+
+# Background for all views goes here
+
+# Configuration for Compact Custom Header
+cch:
+  notifications: show
+  voice: hide
+
+views:
+  - !include '/config/lovelace_views/main_view.yaml'
+  - !include '/config/lovelace_views/updates_view.yaml'
